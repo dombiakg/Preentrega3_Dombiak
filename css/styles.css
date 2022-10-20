@@ -1,4 +1,6 @@
 /*Estilos de css*/
+/*Import de variables*/
+/*Variables*/
 /*Import de bootstrap*/
 /*!
    * Bootstrap  v5.2.2 (https://getbootstrap.com/)
@@ -8191,7 +8193,7 @@ nav ul li {
   nav ul li a {
     text-decoration: none;
     font-style: bold; }
-    nav ul li a :hover {
+    nav ul li a:hover {
       border-bottom: solid 2px white;
       color: white; }
 
@@ -8327,7 +8329,7 @@ nav ul li {
   -webkit-transition: 0.3s ease-in-out;
   -o-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out; }
-  .button :hover {
+  .button:hover {
     color: #fff;
     background-color: black; }
 
@@ -8341,7 +8343,7 @@ nav ul li {
   0% {
     margin-top: -50px; }
   20% {
-    margin-top: -50; } }
+    margin-top: -50px; } }
 
 /*medias querys*/
 @media screen and (max-width: 768px) {
@@ -8366,7 +8368,7 @@ nav ul li {
     font-size: 90%; } }
 
 @media screen and (max-width: 425px) {
-  .main-menu > li {
+  .main-menu li {
     margin: 0px 0px; }
   .contenedor-form {
     display: flex;

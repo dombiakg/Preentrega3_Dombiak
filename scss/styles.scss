@@ -1,5 +1,8 @@
 /*Estilos de css*/
 
+/*Import de variables*/
+@import "variables";
+
 /*Import de bootstrap*/
 @import "bootstrap/bootstrap";
 
@@ -20,7 +23,7 @@ h2 {
     color: red;
     text-align: center;
     font-size: 150%;
-    font-family: "Grandstander";
+    font-family: $fuente_gran;
 }
 
 nav {
@@ -58,13 +61,14 @@ nav {
 }
 
 .card-title {
-    font-family: "Grandstander";
+
+    font-family: $fuente_gran;
     font-weight: bold;
     color: black;
 }
 
 .card-normal {
-    font-family: "Grandstander";
+    font-family: $fuente_gran;
     font-weight: bold;
     font-size: 1rem;
     color: black;
@@ -80,7 +84,7 @@ nav {
 }
 
 body {
-    background-image: url("../img/fondos-de-colores.jpg");
+    background-image: $fondo;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -99,7 +103,7 @@ nav {
                 text-decoration: none;
                 font-style: bold;
 
-                :hover {
+                &:hover{
                     border-bottom: solid 2px white;
                     color: white;
                 }
@@ -109,8 +113,8 @@ nav {
 }
 
 .cat {
-    height: 300px;
-    width: 300px;
+    height: $unidad_50p *6;
+    width:  $unidad_50p *6;
 }
 
 .button-list1 {
@@ -155,7 +159,7 @@ nav {
 }
 
 .container-menu {
-    height: 50px;
+    height: $unidad_50p ;
     width: 100%;
     position: relative;
     -webkit-transition: all 0.3s;
@@ -189,8 +193,7 @@ nav {
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 70px;
     grid-row-gap: 70px;
-    padding: 50px;
-
+    padding: $unidad_50p ;
 }
 
 .contenedor-fotos {
@@ -205,8 +208,8 @@ nav {
 }
 
 .contenedor-fotos div {
-    width: 100px;
-    height: 100px;
+    width: $unidad_50p *2;
+    height: $unidad_50p *2;
 }
 
 .contenedor-mapa {
@@ -236,7 +239,8 @@ nav {
     font-size: 200%;
     background-color: black;
     padding: 10px;
-    border-radius: 25px;
+    border-radius: $unidad_50p/2;
+
 }
 
 .parrafoWhatsapp a {
@@ -262,7 +266,7 @@ nav {
     -o-transition: 0.3s ease-in-out;
     transition: 0.3s ease-in-out;
 
-    :hover {
+    &:hover {
         color: #fff;
         background-color: black;
     }
@@ -280,11 +284,12 @@ nav {
 
 @keyframes cambiar {
     0% {
-        margin-top: -50px;
+        margin-top: -$unidad_50p ;
     }
 
     20% {
-        margin-top: -50;
+
+        margin-top: -$unidad_50p ;
     }
 }
 
@@ -332,8 +337,10 @@ nav {
 
 @media screen and (max-width: 425px) {
 
-    .main-menu>li {
-        margin: 0px 0px;
+    .main-menu {
+        li {
+            margin: 0px 0px;
+        }
     }
 
     .contenedor-form {
@@ -348,7 +355,6 @@ nav {
     }
 
     .card-normal {
-
         font-size: 1 rem;
         color: black;
         text-align: center;
