@@ -22,28 +22,29 @@
 
 <body>
     <header>
-        <div>
-            <img src="../img/logo.JPG" width="80">
-        </div>
+        <div class="div_header">
+            <a href="../index.html" class="logo-mobile">
+                <img src="../img/logo.jpg"  width="80" alt="logo.jpg">
+            </a>
+        </div>  
     </header>
-    <nav>
-        <div class="container-menu">
-            <ul class="main-menu">
-                <li>
-                    <a class="text-white" href="../index.html">Inicio</a>
-                </li>
-                <li>
-                    <a class="text-white" href="sobremi.html">Sobre Mi </a>
-                </li>
-
-                <li>
-                    <a class="text-white" href="productos.html">Productos</a>
-                </li>
-
-                <li>
-                    <a class="text-white" href="promociones.html">Promociones</a>
-                </li>
-            </ul>
+   
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse justify-content-evenly" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                    <a class="nav-link" href="sobremi.html">Sobre Mi</a>
+                    <a class="nav-link" href="productos.html">Productos</a>
+                    <a class="nav-link" href="promociones.html">Promociones</a>
+                </div>
+            </div>
         </div>
     </nav>
     <main>
@@ -119,7 +120,7 @@
                         <button class="accordion-button collapsed pregunta bg-transparent" type="button"
                             data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false"
                             aria-controls="flush-collapseThree">
-                             ¿Se puede contratar solo el conjunto completo, torta, cookies y paletas?
+                            ¿Se puede contratar solo el conjunto completo, torta, cookies y paletas?
                         </button>
                     </h2>
                     <div id="flush-collapseThree" class="accordion-collapse collapse bg-transparent"
@@ -131,64 +132,24 @@
             </div>
         </section>
         <!-- Fin Seccion FAQ -->
-
-        <!-- 
-        <section class="container">
-            <div>
-                <h2 class="card-title"> Preguntas Frecuentes</h2>
-            </div>
-
-            <div>
-                <div>
-                    <h2 class="card-normal">
-                        <button class="card-normal" type="button">
-                            ¿Se reciben tarjetas de débito y crédito?
-                        </button>
-                    </h2>
-                    <div class="card-normal">¡Si! Recibimos tarjetas Visa y Mastercard, débito y crédito.</div>
-                </div>
-
-                <div>
-                    <h2 class="card-normal">
-                        <button class="card-normal" type="button">
-                            ¿Con cuanto tiempo antes hay que realizar el pedido?
-                        </button>
-                    </h2>
-                    <div class="card-normal">Tenes un mínimo de una semana antes previo dejando una
-                        seña.
-                    </div>
-                </div>
-
-                <div>
-                    <h2 class="card-normal">
-                        <button class="card-normal" type="button">
-                            ¿Se puede contratar solo el conjunto completo, torta, cookies y paletas?
-                        </button>
-                    </h2>
-                    <div class="card-normal">Por supuesto, los personajes los elegis vos.
-                    </div>
-                </div>
-                <br>
-        </section>
-        -->
         </section>
         <footer class="footer">
             <div>
                 <div>
                     <div>
                         <a class="a_footer" href="https://www.instagram.com/yocortartorta/" target="_blank">
-                            <img src="../img/instagram-00.png" width="30" height="30" alt="" />
+                            <img src="../img/instagram-00.png" width="35" height="30" alt="instagram-00.png" />
                             <p class="text-white2"> &nbsp;https://www.instagram.com/yocortartorta/</p>
                         </a>
                     </div>
                     <div>
                         <a class="a_footer" href="mailto:yocortartorta@gmail.com">
-                            <img src="../img/correo.png" width="25" height="25" alt="" />
+                            <img src="../img/correo.png" width="25" height="25" alt="correo.png" />
                             <p class="text-white2">&nbsp;yocortartorta@gmail.com</p>
 
                         </a>
                         <div class="a_footer">
-                            <img src="../img/telefono.png" width="25" height="25" alt="" />
+                            <img src="../img/telefono.png" width="25" height="25" alt="telefono.png" />
                             <p class="text-white2">&nbsp;+54 (11) 15 5999-4043</p>
                         </div>
                     </div>
@@ -196,9 +157,11 @@
                 <p class="text-white2">Todos los derechos reservados ©/ All rights reserved ©.</p>
         </footer>
     </main>
-    
- <!--Link java script BS-->
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+    <!--Link java script BS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
 
 </body>
 

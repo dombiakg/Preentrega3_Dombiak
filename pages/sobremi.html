@@ -9,87 +9,100 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
-    <title>Sobre Mi</title>
+    <link href="https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,300;0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <!--Link de estilos BS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
     <link rel="stylesheet" href="../css/main.css">
+    <title>Sobre Mi</title>
 </head>
 
 <body>
     <header>
-        <div>
-            <img src="../img/logo.JPG" width="80">
-        </div>
+        <div class="div_header">
+            <a href="../index.html" class="logo-mobile">
+                <img src="../img/logo.jpg"  width="80" alt="logo.jpg">
+            </a>
+        </div>  
     </header>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-    <nav>
-        <div class="container-menu">
-            <ul class="main-menu">
-                <li>
-                    <a class="text-white" href="../index.html">Inicio</a>
-                </li>
-                <li>
-                    <a class="text-white" href="productos.html">Productos</a>
-                </li>
-
-                <li>
-                    <a class="text-white" href="promociones.html">Promociones</a>
-                </li>
-                <li>
-                    <a class="text-white" href="contacto.html">Contacto</a>
-                </li>
-            </ul>
+            <div class="collapse navbar-collapse justify-content-evenly" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                    <a class="nav-link" href="productos.html">Productos</a>
+                    <a class="nav-link" href="promociones.html">Promociones</a>
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                </div>
+            </div>
         </div>
     </nav>
     <main>
-    <h1>¡Bienvenidos a mi mundo!</h1>
-    <div>
-        <p class="card-normal">
-            Mi pasión por las manualidades y la creación comenzó desde chiquita, y gracias a mi mamá y mi abuela, que me
-            inculcaron el oficio con mucho amor y dedicación. Desde que tengo recuerdo soy acumuladora de recetas, y a
-            los 12 años comencé a hacer mis primeras tortas por encargo a familiares, amigos y vecinos del barrio.
+        <h1>¡Bienvenidos a mi mundo!</h1>
+        <div>
+            <p class="card-normal">
+                Mi pasión por las manualidades y la creación comenzó desde chiquita, y gracias a mi mamá y mi abuela,
+                que me
+                inculcaron el oficio con mucho amor y dedicación. Desde que tengo recuerdo soy acumuladora de recetas, y
+                a
+                los 12 años comencé a hacer mis primeras tortas por encargo a familiares, amigos y vecinos del barrio.
 
-            No todos lo saben, pero soy odontóloga, y fue durante los años de carrera que un compañero me acercó al
-            trabajo que cambiaría y definiría mi rumbo.
+                No todos lo saben, pero soy odontóloga, y fue durante los años de carrera que un compañero me acercó al
+                trabajo que cambiaría y definiría mi rumbo.
 
-            Fueron años de duro trabajo recorriendo los mejores lugares para aprender, hasta que un día sentí que ya estaba lista para “volar por mi propia cuenta”.
+                Fueron años de duro trabajo recorriendo los mejores lugares para aprender, hasta que un día sentí que ya
+                estaba lista para “volar por mi propia cuenta”.
 
-            Pero mi historia no terminaría ahí. Hoy en día, además de participar activamente en las recetas y
-            armado de catering dulce en eventos, intento llegar a todos los hogares compartiendo a través de mis redes
-            sociales todos mis secretos y conocimientos para que la gente haga y practique mis recetas en sus casas, que
-            van a poder encontrar en este sitio web. Ahora sí, ¡Bienvenidos a mi mundo!
-        </p>
-    </div>
-    <div class="contenedor-form">
-        <img src="../img/sobremi_img1.JPG" alt="Sobre Mi">
-    </div>
+                Pero mi historia no terminaría ahí. Hoy en día, además de participar activamente en las recetas y
+                armado de catering dulce en eventos, intento llegar a todos los hogares compartiendo a través de mis
+                redes
+                sociales todos mis secretos y conocimientos para que la gente haga y practique mis recetas en sus casas,
+                que
+                van a poder encontrar en este sitio web. Ahora sí, ¡Bienvenidos a mi mundo!
+            </p>
+        </div>
+        <div class="contenedor-form">
+            <img src="../img/sobremi_img1.JPG" alt="Sobre Mi">
+        </div>
     </main>
 
     <footer class="footer">
         <div>
             <div>
                 <div>
-                    <a class= "a_footer"  href="https://www.instagram.com/yocortartorta/" target="_blank">
-                        <img src="../img/instagram-00.png" width="30" height="30" alt="" />
+                    <a class="a_footer" href="https://www.instagram.com/yocortartorta/" target="_blank">
+                        <img src="../img/instagram-00.png" width="35" height="30" alt="instagram-00.png" />
                         <p class="text-white2"> &nbsp;https://www.instagram.com/yocortartorta/</p>
                     </a>
-                </div>    
+                </div>
                 <div>
                     <a class="a_footer" href="mailto:yocortartorta@gmail.com">
-                        <img src="../img/correo.png" width="25" height="25" alt="" /> 
+                        <img src="../img/correo.png" width="25" height="25" alt="correo.png" />
                         <p class="text-white2">&nbsp;yocortartorta@gmail.com</p>
-    
+
                     </a>
-                <div  class= "a_footer" >
-                    <img src="../img/telefono.png" width="25" height="25" alt="" />
-                    <p class="text-white2">&nbsp;+54 (11) 15 5999-4043</p>
+                    <div class="a_footer">
+                        <img src="../img/telefono.png" width="25" height="25" alt="telefono.png" />
+                        <p class="text-white2">&nbsp;+54 (11) 15 5999-4043</p>
+                    </div>
                 </div>
             </div>
-       </div>
-        <p class="text-white2">Todos los derechos reservados ©/ All rights reserved ©.</p>
+            <p class="text-white2">Todos los derechos reservados ©/ All rights reserved ©.</p>
     </footer>
+    <!--Link java script BS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
 
 </body>
 
 </html>
-
-
