@@ -1,5 +1,383 @@
 /*Estilos de css*/
 
 /*Import de bootstrap*/
-@import "bootstrap/bootstrap"
+@import "bootstrap/bootstrap";
+@import "variables";
 
+h1 {
+    color: black;
+    font-style: italic;
+    text-align: center;
+    font-size: 200%;
+    padding-top: 0%;
+    background-color: rgb(243, 148, 230);
+    animation: cambiar 1s;
+    overflow: hidden;
+
+}
+
+h2 {
+    color: red;
+    text-align: center;
+    font-size: 150%;
+    font-family: "Grandstander";
+}
+
+nav {
+    padding: 8px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 150%;
+}
+
+.navbar {
+    padding: 8px !important;
+    background-color: black !important;
+    font-size: 150% !important;
+}
+
+.nav-link {
+    color: white !important;
+}
+
+.navbar-toggler {
+    background-color: white !important;
+}
+
+.navbar-toggler-icon {
+    background-color: white !important;
+}
+
+.titulo {
+    width: 300px;
+    height: 40px;
+    font-size: 40 px;
+    font-weight: 40px;
+}
+
+.card-title {
+    font-family: "Grandstander";
+    font-weight: bold;
+    color: black;
+}
+
+.card-normal {
+    font-family: "Grandstander";
+    font-weight: bold;
+    font-size: 1rem;
+    color: black;
+    text-align: center;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.div_header {
+    flex-direction: column;
+   /* transition-property: all;
+    animation: cambiar 5s;*/
+}
+/*
+.div_header:hover {
+    transform: scale(1, 1);
+    width: 140px;
+    height: 100%;
+    border-radius: 0.5rem;
+    padding: 6px;
+}*/
+
+body {
+    background-image: url("../img/fondos-de-colores.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-style: bold;
+}
+
+.cat {
+    height: 300px;
+    width: 300px;
+}
+
+.button-list1 {
+    animation-name: entrada-superior;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0, 3s;
+}
+
+.button-list2 {
+    animation-name: entrada-superior;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1s;
+}
+
+nav ul li a:hover {
+    border-bottom: solid 2px white;
+    color: white;
+}
+
+.contenedor-form {
+    display: flex;
+    justify-content: space-around;
+}
+
+.text-white {
+    color: white;
+}
+
+.text-black {
+    color: black;
+    font-style: bold;
+    font-size: 150%;
+}
+
+.text-white2 {
+    color: white;
+    font-size: 100%
+}
+
+.text-normal {
+    font-style: oblique;
+    font-size: 110%;
+}
+
+.container-menu {
+    height: 50px;
+    width: 100%;
+    position: relative;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.main-menu {
+    list-style-type: none;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-menu>li {
+    position: relative;
+    padding: 23px 0px;
+    margin: 0px 30px;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.contenedor {
+    border: solid 2pX red;
+    background-color: transparent;
+    display: grid;
+    margin: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 70px;
+    grid-row-gap: 70px;
+    padding: 50px;
+
+}
+
+.contenedor-fotos {
+    border: 1px solid #c3c3c3;
+    display: flex;
+    flex-direction: row;
+    border: 8px solid;
+    border-radius: 1.5625rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contenedor-fotos div {
+    width: 100px;
+    height: 100px;
+}
+
+.contenedor-mapa {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
+
+.a_footer {
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.footer {
+    background-color: black;
+    padding: 1em;
+    justify-content: left;
+}
+
+.logoWhatsapp {
+    position: fixed;
+    bottom: 1vw;
+    right: 3vw;
+    color: white;
+    font-size: 200%;
+    background-color: black;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+.parrafoWhatsapp a {
+    color: black;
+    opacity: 90%;
+    font-weight: 200;
+    border-radius: 10px;
+    border-width: 1px;
+    font-size: larger;
+    padding: 5px;
+    font-size: 150%;
+}
+
+.button {
+    padding: 8px 30px !important;
+    border: solid 2px #fff;
+    background-color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    color: black;
+    -webkit-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+
+.button:hover {
+    color: #fff;
+    background-color: black;
+}
+
+@keyframes entrada-superior {
+    0% {
+        transform: translateY(-400px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes cambiar {
+    0% {
+        margin-top: -50px;
+    }
+
+    20% {
+        margin-top: -50;
+    }
+}
+
+/*medias querys*/
+
+@media screen and (max-width: 768px) {
+    .contenedor {
+        grid-template-columns: 1fr;
+        margin: 0px;
+
+    }
+
+    nav {
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: space-between;
+        font-size: 100%;
+    }
+
+    .main-menu {
+        list-style-type: none;
+        list-style: none;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: black;
+        font-style: bold;
+    }
+
+    .card-title {
+        font-size: 100%;
+    }
+
+    .card-normal {
+        font-size: 90%;
+    }
+
+}
+
+@media screen and (max-width: 425px) {
+
+    .main-menu>li {
+        margin: 0px 0px;
+    }
+
+    .contenedor-form {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+
+    }
+
+    .contenedor-form img {
+        width: 80vw;
+
+    }
+
+    .card-normal {
+
+        font-size: 1 rem;
+        color: black;
+        text-align: center;
+        font-size: 80%;
+
+    }
+
+    .text-white2 {
+
+        font-size: 80%;
+    }
+
+    .card-title {
+        font-size: 100%;
+        font-weight: bold;
+    }
+    .logoWhatsapp {
+        font-size: 100%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .text-white2 {
+        font-size: 60%;
+    }
+  
+    h3 {
+        font-size: 100%;
+    }
+}
