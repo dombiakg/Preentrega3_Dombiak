@@ -8,12 +8,6 @@
    * Copyright 2011-2022 Twitter, Inc.
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    */
-/*$accordion-color:                         $body-color !default; // Sass variable because of $accordion-button-icon*/
-/*$accordion-border-color:                  var(--bs-border-color) !default;*/
-/* $accordion-color !default;*/
-/*$accordion-button-active-color:           shade-color($primary, 10%) !default;*/
-/*$accordion-button-focus-border-color:     $input-focus-border-color !default;*/
-/*$btn-focus-box-shadow !default;*/
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -8155,6 +8149,8 @@ nav {
 
 .nav-link {
   color: white !important; }
+  .nav-link:hover {
+    text-decoration: underline; }
 
 .navbar-toggler {
   background-color: white !important; }
