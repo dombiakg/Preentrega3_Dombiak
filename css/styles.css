@@ -8164,6 +8164,20 @@ nav {
   font-size: 40 px;
   font-weight: 40px; }
 
+.firma {
+  font-family: "Courgette";
+  font-size: 20px;
+  line-height: 1.5;
+  font-style: bolder;
+  color: black; }
+
+.wrap-pic-w {
+  display: block; }
+
+.wrap-pic-w img {
+  width: 100%;
+  vertical-align: middle; }
+
 .card-title, .card-normal {
   font-family: "Grandstander";
   font-weight: bold;
