@@ -9,13 +9,16 @@
 @mixin color_font ($color){
     color: $color;
 }
+@mixin style_font ($text_align, $font_style, $font_size) {
+    text-align: $text_align;
+    font-style: $font_style;
+    font-size:  $font_size;    
+}
 
 /*Gaby*/
 h1 {
     @include color_font(black);
-    font-style: italic;
-    text-align: center;
-    font-size: 200%;
+    @include style_font (center,italic,200%);
     padding-top: 0%;
     background-color: rgb(243, 148, 230);
     animation: cambiar 1s;
@@ -40,7 +43,7 @@ nav {
 }
 
 .navbar {
-    padding: 8px !important;
+    padding: 8px!important;
     background-color: black !important;
     font-size: 150% !important;
 }

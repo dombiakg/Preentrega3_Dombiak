@@ -2736,16 +2736,16 @@ textarea.form-control-lg {
   display: block; }
 
 .navbar {
-  --bs-navbar-padding-x: 0;
+  --bs-navbar-padding-x: 8px;
   --bs-navbar-padding-y: 0.5rem;
-  --bs-navbar-color: rgba(0, 0, 0, 0.55);
+  --bs-navbar-color: black;
   --bs-navbar-hover-color: rgba(0, 0, 0, 0.7);
   --bs-navbar-disabled-color: rgba(0, 0, 0, 0.3);
-  --bs-navbar-active-color: rgba(0, 0, 0, 0.9);
+  --bs-navbar-active-color: black;
   --bs-navbar-brand-padding-y: 0.3125rem;
   --bs-navbar-brand-margin-end: 1rem;
-  --bs-navbar-brand-font-size: 1.25rem;
-  --bs-navbar-brand-color: rgba(0, 0, 0, 0.9);
+  --bs-navbar-brand-font-size:  150%;
+  --bs-navbar-brand-color: black;
   --bs-navbar-brand-hover-color: rgba(0, 0, 0, 0.9);
   --bs-navbar-nav-link-padding-x: 0.5rem;
   --bs-navbar-toggler-padding-y: 0.25rem;
@@ -8120,8 +8120,8 @@ textarea.form-control-lg {
 /*Gaby*/
 h1, .h1 {
   color: black;
-  font-style: italic;
   text-align: center;
+  font-style: italic;
   font-size: 200%;
   padding-top: 0%;
   background-color: #f394e6;

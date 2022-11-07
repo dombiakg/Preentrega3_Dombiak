@@ -5,16 +5,17 @@
 
 .navbar {
   // scss-docs-start navbar-css-vars
-  --#{$prefix}navbar-padding-x: #{if($navbar-padding-x == null, 0, $navbar-padding-x)};
+   
+  --#{$prefix}navbar-padding-x: 8px; 
   --#{$prefix}navbar-padding-y: #{$navbar-padding-y};
-  --#{$prefix}navbar-color: #{$navbar-light-color};
+  --#{$prefix}navbar-color: black;  
   --#{$prefix}navbar-hover-color: #{$navbar-light-hover-color};
   --#{$prefix}navbar-disabled-color: #{$navbar-light-disabled-color};
-  --#{$prefix}navbar-active-color: #{$navbar-light-active-color};
+  --#{$prefix}navbar-active-color: black;
   --#{$prefix}navbar-brand-padding-y: #{$navbar-brand-padding-y};
   --#{$prefix}navbar-brand-margin-end: #{$navbar-brand-margin-end};
-  --#{$prefix}navbar-brand-font-size: #{$navbar-brand-font-size};
-  --#{$prefix}navbar-brand-color: #{$navbar-light-brand-color};
+  --#{$prefix}navbar-brand-font-size:  150%; 
+  --#{$prefix}navbar-brand-color: black; 
   --#{$prefix}navbar-brand-hover-color: #{$navbar-light-brand-hover-color};
   --#{$prefix}navbar-nav-link-padding-x: #{$navbar-nav-link-padding-x};
   --#{$prefix}navbar-toggler-padding-y: #{$navbar-toggler-padding-y};
@@ -25,6 +26,7 @@
   --#{$prefix}navbar-toggler-border-radius: #{$navbar-toggler-border-radius};
   --#{$prefix}navbar-toggler-focus-width: #{$navbar-toggler-focus-width};
   --#{$prefix}navbar-toggler-transition: #{$navbar-toggler-transition};
+
   // scss-docs-end navbar-css-vars
 
   position: relative;
