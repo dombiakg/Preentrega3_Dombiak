@@ -15,7 +15,7 @@
     font-size:  $font_size;    
 }
 
-/*Gaby*/
+
 h1 {
     @include color_font(black);
     @include style_font (center,italic,200%);
